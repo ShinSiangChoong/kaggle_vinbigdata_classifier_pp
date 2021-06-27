@@ -1,4 +1,4 @@
-## A Multilabel Classifier for Post Processing
+## A Multilabel Classifier-based Post Processing for VinBigData Chest X-ray Abnormalities Detection
 Part of the 3rd place solution of [VinBigData Chest X-ray Abnormalities Detection](https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection) as described in this [discussion](https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection/discussion/229636#1257712).
 
 ### Pre-processing for Training
