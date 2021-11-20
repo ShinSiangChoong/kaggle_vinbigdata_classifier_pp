@@ -16,6 +16,7 @@ from albumentations import (
     HorizontalFlip
 )
 
+
 csv_path = '../input/vinbigdata-chest-xray-abnormalities-detection/multilabel_cls_train.csv'
 pos_weight_path = '../input/vinbigdata-chest-xray-abnormalities-detection/multilabel_pos_weight.npy'
 image_path = '../input/train1024/' # The path to the folder with converted PNG files
@@ -25,7 +26,8 @@ bs = 2
 lr = 1e-3
 N_EPOCHS = 100
 IMG_SIZE = 1024
-    
+
+
 def main():
     seed_everything(42)
 
@@ -128,6 +130,7 @@ def main():
 
                 if optimizer.param_groups[0]['lr'] < 0.99e-6:
                     break
+
                     
 if __name__=='__main__':
     main()    
