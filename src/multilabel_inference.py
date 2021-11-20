@@ -7,6 +7,7 @@ from multilabel_dataset import TestDataset
 from multilabel_util import *
 from albumentations import Compose, Normalize
 
+
 csv_path = '../input/vinbigdata-chest-xray-abnormalities-detection/test_meta.csv'
 image_path = '../input/test1024/' # The path to the folder with converted PNG files
 model_path = '../classifier_weights/1024/'
@@ -14,6 +15,7 @@ save_path = '../classifier_preds/1024/'
 
 bs = 2
 IMG_SIZE = 1024
+
 
 def main():
     test = pd.read_csv(csv_path)
@@ -65,7 +67,8 @@ def main():
         df_preds.to_csv(
             save_path+f'multilabel_efnb4_fold{fold}_preds.csv',
             index=False
-        )
-                    
+        ) 
+
+        
 if __name__=='__main__':
     main()    
